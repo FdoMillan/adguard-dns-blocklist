@@ -1,0 +1,567 @@
+# ======================================================================
+# == LISTA DE BLOQUEO DE REDES SOCIALES Y DISTRACCIONES (DNS) ==
+# ======================================================================
+# Versión exhaustiva para AdGuard Home.
+# Bloquea Redes Sociales, Streaming, Gaming 
+# Optimizado: La regla "||dominio.com^" ya bloquea todos sus subdominios.
+
+# ----------------------------------------------------
+# ---- SECCIÓN 1: REDES SOCIALES Y MENSAJERÍA ----
+# ----------------------------------------------------
+
+# ---- Meta (Facebook, Instagram, WhatsApp, Threads, Oculus) ----
+# Bloqueo integral del ecosistema de Meta.
+||facebook.com^
+||facebook.net^
+||fb.com^
+||fb.me^
+||fbcdn.net^
+||fbsbx.com^
+||instagram.com^
+||cdninstagram.com^
+||instagr.am^
+||ig.me^
+||messenger.com^
+||m.me^
+||whatsapp.com^
+||whatsapp.net^
+||wa.me^
+||threads.net^
+||meta.com^
+||oculus.com^
+||workplace.com^
+||atdmt.com^
+
+# ---- TikTok y Bytedance ----
+# Bloquea la app, la web, CDNs y la empresa matriz.
+||tiktok.com^
+||tiktokv.com^
+||tiktokcdn.com^
+||p16-tiktokcdn-com.akamaized.net^
+||muscdn.com^
+||musical.ly^
+||byteoversea.com^
+||bytedance.com^
+||ibytedtos.com^
+||tik-tokapi.com^
+||ttwstatic.com^
+
+# ---- X (antes Twitter) ----
+||twitter.com^
+||t.co^
+||twimg.com^
+||tweetdeck.com^
+||twitterinc.com^
+||x.com^
+
+# ---- Google (YouTube y servicios relacionados) ----
+# ¡CUIDADO! Bloquear googlevideo.com puede romper videos en Google Drive/Fotos.
+||youtube.com^
+||youtube-nocookie.com^
+||youtu.be^
+||yt.be^
+||googlevideo.com^
+||ytimg.com^
+||ytimg.l.google.com^
+||ggpht.com^
+||youtubei.googleapis.com^
+||yt3.ggpht.com^
+||ytmusic.app.goo.gl^
+||music.youtube.com^
+
+# ---- Reddit ----
+||reddit.com^
+||redd.it^
+||redditmedia.com^
+||redditstatic.com^
+||g.redditmedia.com^
+
+# ---- Discord ----
+||discord.com^
+||discord.gg^
+||discordapp.com^
+||discordapp.net^
+||discord.media^
+||cdn.discordapp.com^
+||gateway.discord.gg^
+
+# ---- Snapchat ----
+||snapchat.com^
+||sc-cdn.net^
+||snap-analytics.com^
+||app-measurement.com^
+
+# ---- Pinterest ----
+||pinterest.com^
+||pinterest.ca^
+||pinterest.co.uk^
+||pinterest.de^
+||pinterest.fr^
+||pinterest.es^
+||pinimg.com^
+
+# ---- LinkedIn (Red Profesional) ----
+||linkedin.com^
+||lnkd.in^
+||licdn.com^
+||linkedin.cn^
+
+# ---- Telegram ----
+||telegram.org^
+||t.me^
+||tdesktop.com^
+||stel.com^
+
+# ---- Otras Redes Sociales y Plataformas de Contenido ----
+||tumblr.com^
+||quora.com^
+||medium.com^
+||9gag.com^
+||imgur.com^
+||bere.al^
+||truthsocial.com^
+||bsky.app^
+||bsky.social^
+||atproto.com^
+||clubhouse.com^
+||onlyfans.com^
+||patreon.com^
+||kik.com^
+||wechat.com^
+||weixin.qq.com^
+||vk.com^
+||vk.ru^
+||mastodon.social^
+||gab.com^
+||parler.com^
+||gettr.com^
+||nextdoor.com^
+
+# ---- Plataformas de Citas ----
+||tinder.com^
+||gotinder.com^
+||tinder-api.com^
+||bumble.com^
+||badoo.com^
+||okcupid.com^
+||hinge.co^
+||grindr.com^
+
+# ----------------------------------------------------
+# ---- SECCIÓN 2: STREAMING DE VÍDEO Y MÚSICA ----
+# ----------------------------------------------------
+
+# ---- Video Streaming ----
+||netflix.com^
+||nflxvideo.net^
+||nflxso.net^
+||nflxext.com^
+||disneyplus.com^
+||disney-plus.net^
+||dssott.com^
+||bamgrid.com^
+||max.com^
+||hbomax.com^
+||hbonow.com^
+||hbo.com^
+||hbomaxcdn.com^
+||primevideo.com^
+||amazonvideo.com^
+||media-amazon.com^
+||hulu.com^
+||huluim.com^
+||twitch.tv^
+||ttvnw.net^
+||twitchcdn.net^
+||pluto.tv^
+||vimeo.com^
+||dailymotion.com^
+||viki.com^
+||rakuten.tv^
+||crunchyroll.com^
+||fubo.tv^
+
+# ---- Música Streaming ----
+||spotify.com^
+||ps-cdn.com^
+||scdn.co^
+||soundcloud.com^
+||pandora.com^
+||tidal.com^
+||deezer.com^
+||iheart.com^
+||bandcamp.com^
+
+# ----------------------------------------------------
+# ---- SECCIÓN 3: PLATAFORMAS DE GAMING ----
+# ----------------------------------------------------
+
+# ---- PC Gaming (Tiendas y Lanzadores) ----
+||steampowered.com^
+||steamcommunity.com^
+||steamstatic.com^
+||steamgames.com^
+||epicgames.com^
+||unrealengine.com^
+||epicgames-download.com^
+||gog.com^
+||gogalaxy.com^
+||ubisoft.com^
+||ubi.com^
+||uplay.com^
+||blizzard.com^
+||battle.net^
+||ea.com^
+||origin.com^
+||rockstargames.com^
+
+# ---- Consolas (Redes y Servicios Online) ----
+# ¡CUIDADO! Esto bloqueará el juego online, las tiendas y las actualizaciones.
+# PlayStation Network
+||playstation.com^
+||playstation.net^
+||sonyentertainmentnetwork.com^
+# Xbox Live
+||xbox.com^
+||xboxlive.com^
+||live.com^ # ¡Precaución! Puede afectar el inicio de sesión de Microsoft/Office365.
+# Nintendo Network
+||nintendo.com^
+||nintendo.net^
+||nintendoswitch-eshop.com^
+||nintendo-europe.com^
+
+# ======================================================================
+# == FIN DE LA LISTA MAESTRA   y categorías normales  ==
+# ======================================================================
+
+
+# ! Bloque: Foros polémicos, chans y clones
+||4chan.org^
+||boards.4chan.org^
+||boards.4channel.org^
+||4channel.org^
+||4chon.net^
+||4ct.org^
+||55chan.org^
+||420chan.org^
+||8chan.moe^
+||8kun.top^
+||alogs.space^
+||anonib.com^
+||anoncafe.org^
+||anonboards.com^
+||arisu.pw^
+||auschan.org^
+||bakachan.org^
+||blowchan.org^
+||booru.org^
+||brchan.org^
+||brchan.org^
+||bunkerchan.xyz^
+||burichan.com^
+||cuckchan.org^
+||crystal.cafe^
+||czuchan.org^
+||doblchan.com^
+||doblchan.net^
+||doblchan.org^
+||dreamchan.net^
+||endchan.org^
+||explchan.xyz^
+||femchan.com^
+||femchan.org^
+||femcels.org^
+||fitchan.net^
+||foxdickfarm.com^
+||frchan.org^
+||fringechan.org^
+||frchan.net^
+||gchan.com^
+||hispa-chan.org^
+||huemonchan.org^
+||hispachan.org^
+||intchan.org^
+||julay.world^
+||julay.xyz^
+||kohlchan.net^
+||lainchan.org^
+||lainchan.jp^
+||lainchan.xyz^
+||leftychan.net^
+||leftypol.org^
+||lolcow.org^
+||lolcow.farm^
+||lolcor.farm^
+||lolcow.farm^
+||manachan.org^
+||mewch.net^
+||mlpol.net^
+||moot.co^
+||mychan.org^
+||neetchan.net^
+||neets.co^
+||neet.moe^
+||netchan.ru^
+||neonchan.org^
+||nochan.org^
+||noxchan.org^
+||nowere.net^
+||nyaa.si^
+||onyxchan.com^
+||overchan.ru^
+||ozchan.org^
+||pink.lol^
+||plchan.org^
+||ponichan.ru^
+||soyjak.party^
+||thebarchive.com^
+||tokyochronos.net^
+||trollchan.org^
+||trashchan.org^
+||uncensored.cafe^
+||vch.moe^
+||voach.net^
+||voat.co^
+||voat.zone^
+||wchan.xyz^
+||weebchan.com^
+||whchan.org^
+||wirechan.org^
+||wizchan.org^
+||wizardchan.net^
+||wireschan.org^
+||zzzchan.xyz^
+
+# ! Bloque: Foros de “drama”, doxxing y vigilancia
+||kiwifarms.net^
+||kiwifarms.st^
+||lolcow.farm^
+||lolcow.org^
+||lolcor.farm^
+||cowthread.org^
+||prettyuglylittleliar.net^
+||pink.lol^
+||wings.gg^
+||drama.wiki^
+||dramaalert.com^
+||rdrama.net^
+||exposedreality.com^
+||guru gossip.com^
+||badwebcomicswiki.com^
+||pullarchive.com^
+||gossipguru.com^
+
+# ! Bloque: Plataformas de contenido alternativo / extrema / videos “uncensored”
+||bitchute.com^
+||odysee.com^
+||rumble.com^
+||brighteon.com^
+||peertube.social^
+||twetch.app^
+||lbry.com^
+||lbry.tv^
+||bunkr.is^
+||bunkr.ru^
+||anontalk.com^
+||wrongthink.net^
+||freespeechextremist.com^
+||gab.com^
+||gab.ai^
+||gabtv.com^
+||poa.st^
+||parler.com^
+||gettr.com^
+||spinster.xyz^
+||honkler.com^
+||voat.co^
+||voat.zone^
+||truthsocial.com^
+||poal.co^
+||notabug.io^
+||hispagatos.org^
+||yapms.com^
+||qmap.pub^
+||tusky.app^
+
+# ! Bloque: Imageboards NSFW y foros internacionales (zonas “grey/black”)
+||chan.sankakucomplex.com^
+||sankakucomplex.com^
+||rule34.xxx^
+||rule34.paheal.net^
+||rule34.us^
+||f95zone.to^
+||gelbooru.com^
+||xbooru.com^
+||e621.net^
+||e926.net^
+||allthefallen.moe^
+||allthefallen.ninja^
+||tfgames.site^
+||hypnohub.net^
+||hentaichan.ru^
+||hentairules.net^
+||hentai-foundry.com^
+||hentai4manga.com^
+||doujins.com^
+||myhentaigallery.com^
+||8muses.com^
+||3dmuses.com^
+||theporndude.com^
+
+# ! Bloque: Alternativas a Reddit y redes federadas
+||lemmy.ml^
+||lemmygrad.ml^
+||lemmy.world^
+||beehaw.org^
+||sh.itjust.works^
+||feddit.de^
+||feddit.nl^
+||fediverse.party^
+||sopuli.xyz^
+||rdrama.net^
+||ruqqus.com^
+||kbin.social^
+||kbin.run^
+||discuss.tchncs.de^
+||teddit.net^
+||libreddit.spike.codes^
+||notabug.io^
+
+# ! Bloque: Foros incel, misoginia y espacios radicales
+||incels.is^
+||incels.net^
+||incelistan.net^
+||incels.co^
+||lookism.net^
+||love-shy.com^
+||trp.red^
+||theredpillforum.com^
+||justhearin.com^
+||redpilltalk.com^
+||returnofkings.com^
+||neet.moe^
+
+ # ! Bloque: Sitios y foros de habla hispana/latina (polemicos/NSFW)
+||hispachan.org^
+||forocoches.com^
+||forochan.org^
+||argchan.net^
+||mexchan.org^
+||spanichan.org^
+||espchan.org^
+||forolatino.net^
+||cuatrotablas.info^
+||peruchan.org^
+||venechan.org^
+||taringa.net^
+||taringa.ws^
+||zonachan.org^
+||chilichan.org^
+||doblchan.com^
+||doblchan.net^
+||doblchan.org^
+||tablondeanuncios.com^
+||desmotivaciones.es^
+||forosperu.net^
+||lapolladesertora.net^
+||foromedios.com^
+||fmsite.net^
+||trucoteca.com^
+||comunidadxbox.com^
+||mundoxbox.com^
+||forosdelweb.com^
+
+# ! Bloque: Mirrors, proxys y variantes (clones/migraciones)
+||4cdn.org^
+||4chanarchive.com^
+||4chanarchives.cu.cc^
+||4chanarchive.net^
+||4chanarchive.org^
+||archived.moe^
+||archiveofsins.com^
+||desuarchive.org^
+||thebarchive.com^
+||warosu.org^
+||yuki.la^
+||nyafuu.org^
+||fireden.net^
+||boards.4chan.org^
+||archive.4plebs.org^
+||arch.b4k.co^
+||find.4plebs.org^
+||chanarchive.org^
+||kohlchan.net^
+||kohlchan.com^
+||kohlchan.xyz^
+||julay.xyz^
+||julay.world^
+||alogs.space^
+||lainchan.org^
+||lainchan.jp^
+||lainchan.xyz^
+||neonchan.org^
+||endchan.org^
+||endchan.net^
+||endchan.xyz^
+||zzzchan.xyz^
+||soyjak.party^
+
+# ! Bloque: Plataformas “edgy”, alternativas, y redes censuradas por polémica
+||discord.com^
+||discord.gg^
+||telegram.org^
+||matrix.org^
+||riot.im^
+||t.me^
+||reddit.com^
+||redd.it^
+||old.reddit.com^
+||np.reddit.com^
+||ruqqus.com^
+||bunkr.is^
+||bunkr.ru^
+||bunkr.to^
+||bunkr.su^
+||bunkr.site^
+
+# ! Bloque: Sitios de videos “no moderados” y alternativos a YouTube
+||peertube.social^
+||tube.cadence.moe^
+||petube.cx^
+||watchpeopledie.tv^
+||bestgore.com^
+||liveleak.com^
+||leakforums.net^
+||leak.sx^
+||leaked.cx^
+||leakedbb.com^
+||leakpeek.com^
+||leakedme.com^
+
+# ! Bloque: Sitios de contenido polémico o NSFW de difícil clasificación
+||pornolab.net^
+||theporndude.com^
+||mydirtyhobby.com^
+||camsoda.com^
+||chatroulette.com^
+||omegle.com^
+||chaturbate.com^
+||stripchat.com^
+||manyvids.com^
+||cam4.com^
+||xvideos.com^
+||pornhub.com^
+||redtube.com^
+||youjizz.com^
+||xnxx.com^
+||youporn.com^
+||hclips.com^
+||spankbang.com^
+||drtuber.com^
+||xtube.com^
+||tube8.com^
+||beeg.com^
+
+# ! Notas:
+# ! - Incluye dominios NSFW, redes extremas, foros de “drama” y clones/archivos.
